@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-header__logo"><img src="<img src="http://placehold.it/150x100">" width="138" height="70" alt="Логотип города Седона"></div>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="info.html">информация</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a href="map.html">карта штата</a>
+            </li>
+            <li class="site-list__item">
+              <a href="hotels.html">гостиницы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="form-page">
+      <section class="sedona-sign">
+        <p>SEDONA</p>
+      </section>
+      <section class="section">
+        <h3 class="section__title">Оставьте свой отзыв</h3>
+        <p class="section__info">Помогате нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенныз вами достопримечательностях</p>
+      </section>
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form__fieldset form__filedlset--name">
+          <h3 class="form__title">Представьтесь:</h3>
+          <p class="form__item">
+            <label for="field-input" class="form__label">Имя:</label>
+            <input class="form__input" id="field-input" type="text" name="name" value="" placeholder="">
+          </p>
+          <p class="form__item">
+            <label for="field-input" class="form__label">Фамилия:</label>
+            <input class="form__input" id="field-input" type="text" name="surname" value="" placeholder="">
+          </p>
+          <p class="form__item">
+            <label for="field-input" class="form__label">Отчество:</label>
+            <input class="form__input" id="field-input" type="text" name="patronymic" value="" placeholder="">
+          </p>
+        </fieldset>
+        <fieldset class="form__fieldset form__filedlset--contact">
+          <h3 class="form__title">Контактная информация:</h3>
+          <p class="form__item">
+            <label for="field-input" class="form__label">Контактный телефон:</label>
+            <input class="form__input" id="field-input" type="text" name="phone" value="Введите телефон" placeholder="">
+          </p>
+          <p class="form__item">
+            <label for="field-input" class="form__label">Электронная почта:</label>
+            <input class="form__input" id="field-input" type="text" name="email" value="Введите e-mail" placeholder="">
+          </p>
+        </fieldset>
+        <fieldset class="form__fieldset form__filedlset--impression">
+          <h3 class="form__title">Ваше общее впечатление:</h3>
+          <p class="form__item">
+            <input class="form__input form__input--active" id="field-input" type="radio" name="positive" checked>
+            <label for="field-input" class="form__label">Скорее положительное</label>
+          </p>
+          <p class="form__item">
+            <input class="form__input" id="field-input" type="radio" name="negative">
+            <label for="field-input" class="form__label">Скорее отрицательное</label>
+          </p>
+          <p class="form__item">
+            <input class="form__input" id="field-input" type="radio" name="neutral">
+            <label for="field-input" class="form__label">Затрудняюсь ответить</label>
+          </p>
+        </fieldset>
+        <fieldset class="form__fieldset form__filedlset--attraction">
+          <h3 class="form__title">Посещенные достопримечательности:</h3>
+          <p class="form__item">
+            <input class="form__input form__input--active" id="field-input" type="checkbox" name="bridge" checked>
+            <label for="field-input">Мост Дьявола</label>
+          </p>
+          <p class="form__item">
+            <input class="form__input form__input--active" id="field-input" type="checkbox" name="mountain" checked>
+            <label for="field-input">Гора-колокол</label>
+          </p>
+          <p class="form__item">
+            <input class="form__input form__input--active" id="field-input" type="checkbox" name="park" checked>
+            <label for="field-input">Слайд-парк</label>
+          </p>
+          <p class="form__item">
+            <input class="form__input"  id="field-input" type="checkbox" name="rock" >
+            <label for="field-input">Красные скалы</label>
+          </p>
+        </fieldset>
+        <fieldset class="form__fieldset form__filedlset--emotion">
+          <h3 class="form__title">Опишите свои эмоции</h3>
+          <textarea class="form__text" rows="" cols="" name="emotions"></textarea>
+        </fieldset>
+        <input class="button form__button"  type="submit" value="Отправить отзыв">
+      </form>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__contacts contacts">
+        <p class="contacts__hashtag">#visitsedona</p>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter"><span class="visually-hidden">Мы в Твиттере</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube"><span class="visually-hidden">Мы в Ютубе</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+
+  </body>
+</html>
